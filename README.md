@@ -1,1 +1,3 @@
-# PokerBot  Run : npm index.js  Install node module before
+# PokerBot   
+Run : npm index.js  
+Install node module before
