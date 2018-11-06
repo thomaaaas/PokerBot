@@ -1,11 +1,15 @@
 var Game = require('./game');
 var game = new Game();
+var readlineSync = require('readline-sync');
+
+var nom = readlineSync.question('Entrez votre nom:  ');
 
 game.addPlayer({
-    name: "thomas",
+    name: nom,
     chips: 20000,
     id: 1
 });
+
 game.addPlayer({
     name: "bot",
     chips: 20000,
@@ -16,9 +20,15 @@ game.addPlayer({
     chips: 20000,
     id: 3
 });
+game.addPlayer({
+    name: "bot3",
+    chips: 20000,
+    id: 4
+});
 
 game.start();
 while(!game.endGame){
     game.getCurrentPlayer().effectuerAction();
 }
+
 
