@@ -20,11 +20,6 @@ game.addPlayer({
     chips: 20000,
     id: 3
 });
-game.addPlayer({
-    name: "bot3",
-    chips: 20000,
-    id: 4
-});
 
 game.start();
 while(!game.endGame){
