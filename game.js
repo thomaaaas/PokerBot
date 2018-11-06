@@ -33,7 +33,6 @@ function Game() {
 Game.prototype.addPlayer = function(attr) {
     var newPlayer = new Player(attr);
     logd('Player ' + newPlayer.name + ' added to the game');
-    logd('player ' + newPlayer.id);
     newPlayer.game = this;
     this.players.push(newPlayer);
 };
